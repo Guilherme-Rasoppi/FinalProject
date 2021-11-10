@@ -13,6 +13,10 @@ class CourseService {
         courses[course.code] = course
     }
 
+    fun veri(courseId: String): Boolean{
+        return courses.containsKey(courseId)
+    }
+
     fun getCourse(code: String): Course? {
         return if (courses.containsKey(code)) {
             courses[code]

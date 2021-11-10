@@ -16,6 +16,6 @@ internal class CourseServiceTest {
     @Test
     fun getCourse() {
         teste.registerCourse(course)
-        assertNotEquals(false, teste.getCourse("INTRO-CS-1"))
+        assertEquals(true, teste.veri("INTRO-CS-1"))
     }
 }
